@@ -1,0 +1,24 @@
+Onde fica,Localizacao
+Onde que � a clinica,Localizacao
+Qual � o endere�o,Localizacao
+Me passa a localiza��o,Localizacao
+Em que lugar fica a clinica,Localizacao
+Qual o numero de telefone,Contato
+me passa o contato,Contato
+Onde posso ligar pra falar com voce,Contato
+Como fa�o para entrar em contato,Contato
+Quero ligar para a clinica,Contato
+Que tipos de medicos atendem na clinica,Especialidades
+Quais especialidades voces atendem,Especialidades
+Quero saber quais especialidades voces tem,Especialidades
+voces fazem o que,Especialidades
+clinica atende o que,Especialidades
+Quero marcar uma consulta,Agendamento_Consulta
+quero fazer o agendamento de uma consulta,Agendamento_Consulta
+gostaria de marcar um medico,Agendamento_Consulta
+como faço para agendar uma consulta,Agendamento_Consulta
+Por favor marque uma consulta medica para mim,Agendamento_Consulta
+tchau,Despedida
+obrigada,Despedida
+passar bem,Despedida
+vou indo nessa,Despedida
