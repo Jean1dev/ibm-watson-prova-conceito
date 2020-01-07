@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  grid-area: header;
+  
+  background: #647ec7;
+  text-align: center;
+  color: aliceblue;
+}
+
+.home {
+  grid-area: home;
+  background-color: white;
+}
+
+.chatbot {
+  grid-area: chatbot;
+  background-color: #f1f1f1;
+  /* height: calc(100vh - 10px); */
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background: #ddd;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  bottom: 0;
+  /* position: absolute; */
+}
+
+.conteudo {
+  display: grid;
+  grid-template-areas: 
+    'header header header header'
+    'home   home   home   chatbot'
+    'footer footer footer footer';
+}
