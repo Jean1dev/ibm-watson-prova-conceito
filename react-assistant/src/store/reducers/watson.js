@@ -3,7 +3,6 @@ const INITIAL_STATE = {
     error: false,
     detailError: null,
     response: null,
-    context: null
 }
 
 export default function watsonTalks(state = INITIAL_STATE, action) {
@@ -14,7 +13,6 @@ export default function watsonTalks(state = INITIAL_STATE, action) {
                 error: false,
                 detailError: null,
                 response: null,
-                context: null
             }
 
         case 'WATSON_REQUEST_SUCCESS':
@@ -23,7 +21,6 @@ export default function watsonTalks(state = INITIAL_STATE, action) {
                 error: false,
                 detailError: null,
                 response: action.response,
-                context: null
             }
 
         case 'WATSON_REQUEST_ERROR':
@@ -32,7 +29,6 @@ export default function watsonTalks(state = INITIAL_STATE, action) {
                 error: true,
                 detailError: action.details,
                 response: null,
-                context: null
             }
 
         case 'WATSON_REQUEST_ERROR':
@@ -41,16 +37,6 @@ export default function watsonTalks(state = INITIAL_STATE, action) {
                 error: true,
                 detailError: action.details,
                 response: null,
-                context: null
-            }
-
-        case 'WATSON_SESSION':
-            return {
-                load: false,
-                error: true,
-                detailError: null,
-                response: null,
-                context: action.context
             }
 
         default: return state

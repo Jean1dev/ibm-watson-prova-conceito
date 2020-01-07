@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 // import { Container } from './styles';
 
 class Home extends Component {
-    render () {
+    render() {
         return (
             <div className="home">
-                <p> HOME </p>
+                {JSON.stringify(this.props.error)}
             </div>
-          );
+        );
     }
 }
 
-export default Home
+const mapStateToProps = state => {
+    return {
+        error: state.watson.detailError
+    }
+}
+
+export default connect(mapStateToProps, null)(Home)
